@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+
+		 $("#stations").change(function(){
+			 if(this.value != "")
+				 {
+		     		alert('well something change to #' + this.value + "#");
+		     		$("#trains").show();
+		     		$("myForm").submit();
+				 }
+			 else
+				 {
+				 $("#trains").hide();
+				 }
+		  });
+
+		});
+
+		        
+	</script>
+</head>
+<body>
+	<p th:text="'Hello, ' + ${name} + '!'" />
+	<div class="container">
+		<<form id="myForm" action="showResult">
+			<p/>
+			<div class="alert alert-info" role="alert">
+				<p>Real Time Departure to West Oakland</p>
+			</div>
+			<select id="stations">
+				<option value="">Please pick your originating station</option>
+				<option th:each="iterator : ${stations}" th:value="${iterator.key}" th:text="${iterator.value}"></option>
+			</select>
+			<div><p/></div>
+			<table class="table" id="trains" style="display:none">
+				<thead>
+					<tr>
+				   		<th scope="col">#</th>
+				    	<th scope="col">First</th>
+				     	<th scope="col">Last</th>
+				     	<th scope="col">Handle</th>
+				   	</tr>
+				</thead>
+				<tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>Otto</td>
+			      <td>@mdo</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>Jacob</td>
+			      <td>Thornton</td>
+			      <td>@fat</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>Larry</td>
+			      <td>the Bird</td>
+			      <td>@twitter</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Real Time Departure to West Oakland</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+
+		 $("#stations").change(function(){
+			 if(this.value != "")
+				 {
+		     		$("#stations").val(this.value);
+		     		$("#trains").show();
+		     		$("#selectedStation").val(this.value);
+		     		$("#myForm").submit();
+		     		$("#stations").val(this.value);
+				 }
+			 else
+				 {
+				 $("#trains").hide();
+				 }
+		  });
+
+		});
+		    
+	</script>
+	<style>
+			ul {
+				    margin: 20px;
+				}
+				
+		.input-color {
+					    position: relative;
+				     }
+		.input-color input 
+				{
+				    padding-left: 20px;
+				}
+		.input-color .color-box 
+				{
+				    width: 10px;
+				    height: 10px;
+				    display: inline-block;
+				    background-color: #ccc;
+				    position: absolute;
+				    left: 5px;
+				    top: 5px;
+				}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form id="myForm" action="showResult">
+		<input type="hidden" name="selectedStation" id="selectedStation" value="" />
+			<p></p>
+			<div class="alert alert-info" role="alert">
+				<p>Real Time Departure to West Oakland</p>
+			</div>
+			<select id="stations">
+				<option value="">Please pick your originating station</option>
+				<option th:each="iterator : ${session.stations}" th:value="${iterator.key}" th:text="${iterator.value}" th:selected="${session.selectedStation} == ${iterator.key}"></option>
+			</select>
+			<p/>
+			<div class="table-wrapper-scroll-y">
+
+				<table class="table table-striped table-small" id="trains" th:style="'display:' + ( (${session.selectedStation} == '')? 'none' : 'block')">
+					<tbody>
+					<th:block th:each="looper : ${resultDisplayBeanMap}">
+   					 	<tr>
+       					 	<td th:text="${looper.value.trainHeadStation}" th:style="'background-color:' + ${looper.value.color}"></td>
+       					 	<th:block th:each="childLooper : ${looper.value.trainTimeList}">
+       					 	<td th:text="${childLooper.outputString}"></td>
+   					 	</tr>
+					</th:block>
+				  </tbody>
+				</table>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

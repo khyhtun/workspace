@@ -1,0 +1,360 @@
+{
+	"?xml": {
+		"@version": "1.0",
+		"@encoding": "utf-8"
+	},
+	"root": {
+		"@id": "1",
+		"uri": {
+			"#cdata-section": "http://api.bart.gov/api/sched.aspx?cmd=depart&orig=24th&dest=woak&time=11:16+pm&a=4&l=1&json=y"
+		},
+		"origin": "24TH",
+		"destination": "WOAK",
+		"sched_num": "47",
+		"schedule": {
+			"date": "Jul 19, 2018",
+			"time": "11:16 PM",
+			"before": "2",
+			"after": "4",
+			"request": {
+				"trip": [
+					{
+						"@origin": "24TH",
+						"@destination": "WOAK",
+						"@fare": "4.10",
+						"@origTimeMin": "10:57 PM",
+						"@origTimeDate": "07/19/2018 ",
+						"@destTimeMin": "11:13 PM",
+						"@destTimeDate": "07/19/2018",
+						"@clipper": "1.35",
+						"@tripTime": "16",
+						"@co2": "8.71",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "3.60",
+									"@class": "clipper",
+									"@name": "Clipper"
+								},
+								{
+									"@amount": "4.10",
+									"@class": "cash",
+									"@name": "BART Blue Ticket"
+								},
+								{
+									"@amount": "1.35",
+									"@class": "rtcclipper",
+									"@name": "Senior/Disabled Clipper"
+								},
+								{
+									"@amount": "1.80",
+									"@class": "student",
+									"@name": "Youth Clipper"
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "24TH",
+								"@destination": "WOAK",
+								"@origTimeMin": "10:57 PM",
+								"@origTimeDate": "07/19/2018",
+								"@destTimeMin": "11:13 PM",
+								"@destTimeDate": "07/19/2018",
+								"@line": "ROUTE 12",
+								"@bikeflag": "1",
+								"@trainHeadStation": "DUBL",
+								"@load": "1",
+								"@trainId": "5132248",
+								"@trainIdx": "72"
+							}
+						]
+					},
+					{
+						"@origin": "24TH",
+						"@destination": "WOAK",
+						"@fare": "4.10",
+						"@origTimeMin": "11:09 PM",
+						"@origTimeDate": "07/19/2018 ",
+						"@destTimeMin": "11:25 PM",
+						"@destTimeDate": "07/19/2018",
+						"@clipper": "1.35",
+						"@tripTime": "16",
+						"@co2": "8.71",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "3.60",
+									"@class": "clipper",
+									"@name": "Clipper"
+								},
+								{
+									"@amount": "4.10",
+									"@class": "cash",
+									"@name": "BART Blue Ticket"
+								},
+								{
+									"@amount": "1.35",
+									"@class": "rtcclipper",
+									"@name": "Senior/Disabled Clipper"
+								},
+								{
+									"@amount": "1.80",
+									"@class": "student",
+									"@name": "Youth Clipper"
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "24TH",
+								"@destination": "WOAK",
+								"@origTimeMin": "11:09 PM",
+								"@origTimeDate": "07/19/2018",
+								"@destTimeMin": "11:25 PM",
+								"@destTimeDate": "07/19/2018",
+								"@line": "ROUTE 2",
+								"@bikeflag": "1",
+								"@trainHeadStation": "ANTC",
+								"@load": "1",
+								"@trainId": "3672236",
+								"@trainIdx": "92"
+							}
+						]
+					},
+					{
+						"@origin": "24TH",
+						"@destination": "WOAK",
+						"@fare": "4.10",
+						"@origTimeMin": "11:17 PM",
+						"@origTimeDate": "07/19/2018 ",
+						"@destTimeMin": "11:33 PM",
+						"@destTimeDate": "07/19/2018",
+						"@clipper": "1.35",
+						"@tripTime": "16",
+						"@co2": "8.71",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "3.60",
+									"@class": "clipper",
+									"@name": "Clipper"
+								},
+								{
+									"@amount": "4.10",
+									"@class": "cash",
+									"@name": "BART Blue Ticket"
+								},
+								{
+									"@amount": "1.35",
+									"@class": "rtcclipper",
+									"@name": "Senior/Disabled Clipper"
+								},
+								{
+									"@amount": "1.80",
+									"@class": "student",
+									"@name": "Youth Clipper"
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "24TH",
+								"@destination": "WOAK",
+								"@origTimeMin": "11:17 PM",
+								"@origTimeDate": "07/19/2018",
+								"@destTimeMin": "11:33 PM",
+								"@destTimeDate": "07/19/2018",
+								"@line": "ROUTE 12",
+								"@bikeflag": "1",
+								"@trainHeadStation": "DUBL",
+								"@load": "1",
+								"@trainId": "5152308",
+								"@trainIdx": "73"
+							}
+						]
+					},
+					{
+						"@origin": "24TH",
+						"@destination": "WOAK",
+						"@fare": "4.10",
+						"@origTimeMin": "11:29 PM",
+						"@origTimeDate": "07/19/2018 ",
+						"@destTimeMin": "11:45 PM",
+						"@destTimeDate": "07/19/2018",
+						"@clipper": "1.35",
+						"@tripTime": "16",
+						"@co2": "8.71",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "3.60",
+									"@class": "clipper",
+									"@name": "Clipper"
+								},
+								{
+									"@amount": "4.10",
+									"@class": "cash",
+									"@name": "BART Blue Ticket"
+								},
+								{
+									"@amount": "1.35",
+									"@class": "rtcclipper",
+									"@name": "Senior/Disabled Clipper"
+								},
+								{
+									"@amount": "1.80",
+									"@class": "student",
+									"@name": "Youth Clipper"
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "24TH",
+								"@destination": "WOAK",
+								"@origTimeMin": "11:29 PM",
+								"@origTimeDate": "07/19/2018",
+								"@destTimeMin": "11:45 PM",
+								"@destTimeDate": "07/19/2018",
+								"@line": "ROUTE 2",
+								"@bikeflag": "1",
+								"@trainHeadStation": "ANTC",
+								"@load": "1",
+								"@trainId": "3712256",
+								"@trainIdx": "93"
+							}
+						]
+					},
+					{
+						"@origin": "24TH",
+						"@destination": "WOAK",
+						"@fare": "4.10",
+						"@origTimeMin": "11:37 PM",
+						"@origTimeDate": "07/19/2018 ",
+						"@destTimeMin": "11:53 PM",
+						"@destTimeDate": "07/19/2018",
+						"@clipper": "1.35",
+						"@tripTime": "16",
+						"@co2": "8.71",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "3.60",
+									"@class": "clipper",
+									"@name": "Clipper"
+								},
+								{
+									"@amount": "4.10",
+									"@class": "cash",
+									"@name": "BART Blue Ticket"
+								},
+								{
+									"@amount": "1.35",
+									"@class": "rtcclipper",
+									"@name": "Senior/Disabled Clipper"
+								},
+								{
+									"@amount": "1.80",
+									"@class": "student",
+									"@name": "Youth Clipper"
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "24TH",
+								"@destination": "WOAK",
+								"@origTimeMin": "11:37 PM",
+								"@origTimeDate": "07/19/2018",
+								"@destTimeMin": "11:53 PM",
+								"@destTimeDate": "07/19/2018",
+								"@line": "ROUTE 12",
+								"@bikeflag": "1",
+								"@trainHeadStation": "DUBL",
+								"@load": "1",
+								"@trainId": "5172328",
+								"@trainIdx": "74"
+							}
+						]
+					},
+					{
+						"@origin": "24TH",
+						"@destination": "WOAK",
+						"@fare": "4.10",
+						"@origTimeMin": "11:49 PM",
+						"@origTimeDate": "07/19/2018 ",
+						"@destTimeMin": "12:05 AM",
+						"@destTimeDate": "07/20/2018",
+						"@clipper": "1.35",
+						"@tripTime": "16",
+						"@co2": "8.71",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "4.10",
+									"@class": "cash",
+									"@name": ""
+								},
+								{
+									"@amount": "3.60",
+									"@class": "clipper",
+									"@name": ""
+								},
+								{
+									"@amount": "1.35",
+									"@class": "rtcclipper",
+									"@name": ""
+								},
+								{
+									"@amount": "1.80",
+									"@class": "student",
+									"@name": ""
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "24TH",
+								"@destination": "WOAK",
+								"@origTimeMin": "11:49 PM",
+								"@origTimeDate": "07/19/2018",
+								"@destTimeMin": "12:05 AM",
+								"@destTimeDate": "07/20/2018",
+								"@line": "ROUTE 2",
+								"@bikeflag": "1",
+								"@trainHeadStation": "ANTC",
+								"@load": "1",
+								"@trainId": "3732316",
+								"@trainIdx": "94"
+							}
+						]
+					}
+				]
+			}
+		},
+		"message": {
+			"co2_emissions": {
+				"#cdata-section": "<p>CO<sub>2</sub> emissions saved by this BART trip: <strong>9.9 pounds.</strong> <a href=\"http://www.bart.gov/guide/carbon\">Read more</a></p>"
+			}
+		}
+	}
+}

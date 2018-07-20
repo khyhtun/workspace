@@ -1,0 +1,140 @@
+{
+	"?xml": {
+		"@version": "1.0",
+		"@encoding": "utf-8"
+	},
+	"root": {
+		"@id": "1",
+		"uri": {
+			"#cdata-section": "http://api.bart.gov/api/sched.aspx?cmd=depart&b=0&a=6&json=y&time=now&dest=WOAK&orig=ftvl"
+		},
+		"origin": "FTVL",
+		"destination": "WOAK",
+		"sched_num": "47",
+		"schedule": {
+			"date": "Jul 20, 2018",
+			"time": "3:59 AM",
+			"before": "0",
+			"after": "2",
+			"request": {
+				"trip": [
+					{
+						"@origin": "FTVL",
+						"@destination": "WOAK",
+						"@fare": "2.50",
+						"@origTimeMin": "4:35 AM",
+						"@origTimeDate": "07/20/2018 ",
+						"@destTimeMin": "4:45 AM",
+						"@destTimeDate": "07/20/2018",
+						"@clipper": "0.75",
+						"@tripTime": "10",
+						"@co2": "3.70",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "2.00",
+									"@class": "clipper",
+									"@name": "Clipper"
+								},
+								{
+									"@amount": "2.50",
+									"@class": "cash",
+									"@name": "BART Blue Ticket"
+								},
+								{
+									"@amount": "0.75",
+									"@class": "rtcclipper",
+									"@name": "Senior/Disabled Clipper"
+								},
+								{
+									"@amount": "1.00",
+									"@class": "student",
+									"@name": "Youth Clipper"
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "FTVL",
+								"@destination": "WOAK",
+								"@origTimeMin": "4:35 AM",
+								"@origTimeDate": "07/20/2018",
+								"@destTimeMin": "4:45 AM",
+								"@destTimeDate": "07/20/2018",
+								"@line": "ROUTE 5",
+								"@bikeflag": "1",
+								"@trainHeadStation": "DALY",
+								"@load": "1",
+								"@trainId": "1010400",
+								"@trainIdx": "1"
+							}
+						]
+					},
+					{
+						"@origin": "FTVL",
+						"@destination": "WOAK",
+						"@fare": "2.50",
+						"@origTimeMin": "4:42 AM",
+						"@origTimeDate": "07/20/2018 ",
+						"@destTimeMin": "4:52 AM",
+						"@destTimeDate": "07/20/2018",
+						"@clipper": "0.75",
+						"@tripTime": "10",
+						"@co2": "3.70",
+						"fares": {
+							"@level": "normal",
+							"fare": [
+								{
+									"@amount": "2.00",
+									"@class": "clipper",
+									"@name": "Clipper"
+								},
+								{
+									"@amount": "2.50",
+									"@class": "cash",
+									"@name": "BART Blue Ticket"
+								},
+								{
+									"@amount": "0.75",
+									"@class": "rtcclipper",
+									"@name": "Senior/Disabled Clipper"
+								},
+								{
+									"@amount": "1.00",
+									"@class": "student",
+									"@name": "Youth Clipper"
+								}
+							]
+						},
+						"leg": [
+							{
+								"@order": "1",
+								"@transfercode": "",
+								"@origin": "FTVL",
+								"@destination": "WOAK",
+								"@origTimeMin": "4:42 AM",
+								"@origTimeDate": "07/20/2018",
+								"@destTimeMin": "4:52 AM",
+								"@destTimeDate": "07/20/2018",
+								"@line": "ROUTE 11",
+								"@bikeflag": "1",
+								"@trainHeadStation": "DALY",
+								"@load": "1",
+								"@trainId": "5150413",
+								"@trainIdx": "1"
+							}
+						]
+					}
+				]
+			}
+		},
+		"message": {
+			"co2_emissions": {
+				"#cdata-section": "<p>CO<sub>2</sub> emissions saved by this BART trip: <strong>3.7 pounds.</strong> <a href=\"http://www.bart.gov/guide/carbon\">Read more</a></p>"
+			}
+		}
+	}
+}
